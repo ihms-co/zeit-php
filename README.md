@@ -1,12 +1,22 @@
-# Codeigniter PHP framework example
+# Codeigniter PHP framework example v3.1.1
 ## Now PHP builder on zeit.co
 
-# https://github.com/juicyfx/now-php
+#### https://github.com/juicyfx/now-php
 
 ### Steps 
 
 1. move the application, system folders along with the index.php into the api directory
 2. Open api/application/config/config.php and replace
+
+	1. Find the code:
+		$application_folder = 'application'; // On line 117 v3.1.1
+
+		replace with:
+		$application_folder = $_SERVER['DOCUMENT_ROOT'].'/api/'.'application';
+
+
+
+
 3. git remote add origin https://github.com/rolandihms/node-api.git
 
 4. git pull origin master
