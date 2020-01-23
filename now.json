@@ -1,8 +1,21 @@
 {
-    "regions": ["all"],
+    "version": 2,
     "functions": {
-      "index.php": {
+      "api/*.php": {
         "runtime": "now-php@0.0.9"
       }
-    }
-  }
+    },
+    "routes": [
+      {
+        "src": "/assets/(.*)",
+        "headers": {
+          "cache-control": "s-maxage=604800"
+        },
+        "dest": "/assets/$1"
+      },
+      {
+        "src": "/(.*)",
+        "dest": "api/index.php"
+      }
+    ]
+}
