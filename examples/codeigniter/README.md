@@ -28,7 +28,7 @@
 3. Open the application/config folder. (api/application/config/config.php)
        	Optional, only if composer is required
 
-		Change the composer autoload config
+	1.	Change the composer autoload config
 
 		Find the composer autoload section
 		
