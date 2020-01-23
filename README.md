@@ -8,10 +8,12 @@
 1. move the application, system folders along with the index.php into the api directory
 2. Open api/application/config/config.php and replace
 
-	1. Find the code:
+	1.  Find the code:
+
 		$application_folder = 'application'; // On line 117 v3.1.1
 
 		replace with:
+
 		$application_folder = $_SERVER['DOCUMENT_ROOT'].'/api/'.'application';
 
 
