@@ -1,5 +1,6 @@
 {
     "version": 2,
+    "public": true,
     "functions": {
       "api/*.php": {
         "runtime": "now-php@0.0.9"
